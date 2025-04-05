@@ -24,8 +24,7 @@ vi vars.sh
 
 ### STEP 5: Launch the installtion (It will prompt you to accept the license)
 ```sh
-chmod 777 launch.sh
-./launch.sh
+chmod 777 launch.sh && ./launch.sh
 ```
 
 ### Samples
