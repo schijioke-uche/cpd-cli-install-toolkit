@@ -42,3 +42,8 @@ chmod 777 launch.sh && ./launch.sh
 ![Exit Install](./media/sample-4.png)
 
 
+-------------------
+##### Author
+###### Dr. Jeffrey Chijioke-Uche, IBM
+
+
