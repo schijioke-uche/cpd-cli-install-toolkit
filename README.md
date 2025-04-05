@@ -17,12 +17,9 @@ cd cpd-cli-install-toolkit
 mv vars.sh.deactivated vars.sh
 ```
 
-### STEP 4: Set your variables 
+### STEP 4: Set your variables | open vars.sh and set the variables then exit screen
 ```sh
-open vars.sh and set:
-CPD_CLI_VERSION=""
-OS_ARCHITECTURE=""
-Save the file.
+vi vars.sh
 ```
 
 ### STEP 5: Launch the installtion (It will prompt you to accept the license)
