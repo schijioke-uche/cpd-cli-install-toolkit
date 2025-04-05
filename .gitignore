@@ -1,0 +1,7 @@
+cli/cpd-cli-workspace/logs/*.log
+
+cli/cpd-cli-workspace/olm-utils-workspace/work/*.log
+
+
+license-accepted-*
+
