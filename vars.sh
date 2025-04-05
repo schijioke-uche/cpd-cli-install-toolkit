@@ -7,7 +7,7 @@
 # @Maintainer: Dr. Jeffrey Chijioke-Uche
 # @Usage: Install cpd-cli variable definition
 
-# Latest 
+# Reference:  https://github.com/IBM/cpd-cli/releases
 # -----------------------------------------------------------------------------
 # CLI         | OS_ARCHITECTURE  | CPD_CLI_VERSION | CPD_VERSION
 # -----------------------------------------------------------------------------

@@ -89,6 +89,7 @@ install_cpd_cli() {
   cpd-cli --help
 
   echo "✅ cpd-cli version ${CPD_CLI_VERSION} installed successfully."
+  release_version
 }
 
 #################################################
@@ -98,6 +99,8 @@ cpd_cli_check() {
   if command -v cpd-cli &> /dev/null; then
     progress_bar 5
     echo "✅ cpd-cli is already installed. Skipping installation."
+    cpd-cli version
+    release_version
     exit 0
   else
     echo "❌ cpd-cli not installed, proceeding with installation..."
@@ -106,7 +109,44 @@ cpd_cli_check() {
   fi
 }
 
+
+# Always last three version advise
+cli_ise_advise(){
+cpd_output=$(cpd-cli version 2>/dev/null)
+cpd_cli_version=$(echo "$cpd_output" | grep -i "Version:" | head -n 1 | awk -F': ' '{print $2}')
+cpd_release_version=$(echo "$cpd_output" | grep -i "CPD Release Version" | awk -F': ' '{print $2}')
+cpd_cli_major_minor=$(echo "$cpd_cli_version" | cut -d. -f1-2)
+cpd_release_major_minor=$(echo "$cpd_release_version" | cut -d. -f1-2)
+case "${cpd_cli_major_minor}_${cpd_release_major_minor}" in
+  "14.1_5.1")
+    echo "✅ Remember: Use cpd-cli Version 14.1.x with Cloud Pak for Data Version 5.1.x"
+    ;;
+  "13.1_4.8")
+    echo "✅ Remember: Use cpd-cli Version 13.1.x with Cloud Pak for Data Version 4.8.x"
+    ;;
+  "14.0_5.0")
+    echo "✅ Remember: Use cpd-cli Version 14.0.x with Cloud Pak for Data Version 5.0.x"
+    ;;
+  *)
+    echo "⚠️ No recommendation found for cpd-cli $cpd_cli_version and CPD $cpd_release_version"
+    ;;
+esac
+}
+
+
+release_version(){
+cpd_version_output=$(cpd-cli version 2>/dev/null)
+cpd_release_version=$(echo "$cpd_version_output" | grep "CPD Release Version" | awk -F': ' '{print $2}')
+if [[ -n "$cpd_release_version" ]]; then
+  echo "✅ This cli is best for cloud pak for data version: $cpd_release_version"
+  cli_ise_advise
+else
+  echo "❌ Unable to determine Cloud Pak for Data Version."
+fi
+}
+
 #################################################
 # Main:
 #################################################
 cpd_cli_check
+
