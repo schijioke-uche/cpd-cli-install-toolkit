@@ -44,6 +44,7 @@ chmod 777 launch.sh && ./launch.sh
 
 -------------------
 ##### Author
-###### Dr. Jeffrey Chijioke-Uche, IBM
+###### © {{YEAR}} Dr. Jeffrey Chijioke-Uche, IBM
+
 
 

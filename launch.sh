@@ -49,6 +49,7 @@ progress_bar() {
     done
 
     echo -e "\n✅ Progress Completed! - 100%"
+    YEAR=$(date +'%Y')
 }
 
 #################################################
