@@ -24,5 +24,5 @@
 ####################
 # Default settings
 ####################
-CPD_CLI_VERSION="14.1.2"
-OS_ARCHITECTURE="linux-EE"
+CPD_CLI_VERSION=""
+OS_ARCHITECTURE=""
