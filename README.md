@@ -4,12 +4,12 @@ The script allows you to install the cpd-cli so that you can complete administra
 
 ## STEP 1: Clone the Toolkit
 ```sh
-git clone https://github.com/schijioke-uche/cpd-cli-install.git
+git clone https://github.com/schijioke-uche/cpd-cli-install-toolkit.git
 ```
 
 ## STEP 2: Change to the root directory
 ```sh
-cd cpd-cli-install
+cd cpd-cli-install-toolkit
 ```
 
 ## STEP 3: Activate the Variable Set by running this command
