@@ -32,6 +32,8 @@ chmod 777 launch.sh
 ```
 
 ### Samples
+
+#### Sample 1
 ![Accept License](./media/sample-1.png)
 
 #### Sample 2
