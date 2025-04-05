@@ -12,7 +12,7 @@ git clone https://github.com/schijioke-uche/cpd-cli-install-toolkit.git
 cd cpd-cli-install-toolkit
 ```
 
-### STEP 3: Activate the Variable Set by running this command
+### STEP 3: Activate the Variable File by running this command
 ```sh
 mv vars.sh.deactivated vars.sh
 ```
