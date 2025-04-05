@@ -30,7 +30,7 @@ license_accept() {
 
   case "$user_input" in
     accept|ACCEPT|Accept)
-      echo "✅ License accepted. Proceeding with activation..."
+      echo "✅ License accepted. Proceeding with installation..."
       accepted_date=$(date +"%m-%d-%Y")
       accepted_file="$ROOT_DIR/license-accepted-$accepted_date"
       echo "STATUS: ACCEPTED" > "$accepted_file"
@@ -39,7 +39,7 @@ license_accept() {
       cat "$LICENSE_FILE" >> "$accepted_file"
       ;;
     decline|DECLINE|Decline)
-      echo "❌ License declined. Exiting activation."
+      echo "❌ License declined. Exited process. CLI software not Installed."
       exit 0
       ;;
     *)

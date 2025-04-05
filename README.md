@@ -39,4 +39,10 @@ chmod 777 launch.sh
 #### Sample 2
 ![Finished Install](./media/sample-2.png)
 
+#### Sample 3
+![Dcline License](./media/sample-3.png)
+
+#### Sample 4
+![Exit Install](./media/sample-3.png)
+
 
