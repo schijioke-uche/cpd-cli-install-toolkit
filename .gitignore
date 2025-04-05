@@ -1,7 +1,8 @@
-cli/cpd-cli-workspace/logs/*.log
+cpd-cli-workspace/logs/*.log
 
-cli/cpd-cli-workspace/olm-utils-workspace/work/*.log
-
+cpd-cli-workspace/olm-utils-workspace/work/*.log
 
 license-accepted-*
+
+cpd-cli-workspace/logs/CPD-CLI-2025-04-05.log
 
